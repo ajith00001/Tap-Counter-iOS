@@ -637,7 +637,7 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('btn-clear-history').addEventListener('click', clearAllHistory);
 
   // Register Service Worker for offline PWA
-  if ('serviceWorker' in navigator) {
+  if ('serviceWorker' in navigator && window.location.protocol.startsWith('http')) {
     navigator.serviceWorker.register('sw.js').catch((err) => {
       console.log('SW registration error:', err);
     });
