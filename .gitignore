@@ -1,0 +1,24 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+
+# Xcode
+build/
+DerivedData/
+*.xcuserstate
+project.xcworkspace/xcuserdata/
+*.xcuserdatad/
+xcuserdata/
+*.xcbkptlist
+*.moved-aside
+*.ipa
+*.app.dSYM.zip
+*.dSYM
+
+# Backups
+*.bak
+*.original
+*.before_watch
+*.tmp

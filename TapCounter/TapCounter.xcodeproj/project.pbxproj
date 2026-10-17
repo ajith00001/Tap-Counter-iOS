@@ -1,0 +1,740 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B019 /* PhoneWatchSyncManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A019 /* PhoneWatchSyncManager.swift */; };
+		B020 /* TapCounterWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A020 /* TapCounterWatchApp.swift */; };
+		B021 /* WatchHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A021 /* WatchHomeView.swift */; };
+		B022 /* WatchCounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A022 /* WatchCounterView.swift */; };
+		B023 /* WatchSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A023 /* WatchSessionManager.swift */; };
+		B024 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A024 /* Assets.xcassets */; };
+		B025 /* TapCounterWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A025 /* TapCounterWatch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B014 /* TapCounterActivityAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A014 /* TapCounterActivityAttributes.swift */; };
+		B015 /* LiveActivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A015 /* LiveActivityManager.swift */; };
+		B016 /* TapCounterWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = A016 /* TapCounterWidget.swift */; };
+		B017 /* TapCounterActivityAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A014 /* TapCounterActivityAttributes.swift */; };
+		B018 /* TapCounterWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = A017 /* TapCounterWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B001 /* TapCounterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A001 /* TapCounterApp.swift */; };
+		B002 /* TapSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = A002 /* TapSession.swift */; };
+		B003 /* HapticService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A003 /* HapticService.swift */; };
+		B004 /* TapStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A004 /* TapStore.swift */; };
+		B005 /* TapSessionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A005 /* TapSessionViewModel.swift */; };
+		B006 /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = A006 /* Components.swift */; };
+		B007 /* TapCounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A007 /* TapCounterView.swift */; };
+		B008 /* NewSessionSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A008 /* NewSessionSheet.swift */; };
+		B009 /* RowViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = A009 /* RowViews.swift */; };
+		B010 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A010 /* HomeView.swift */; };
+		B011 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A011 /* Assets.xcassets */; };
+		B012 /* click.wav in Resources */ = {isa = PBXBuildFile; fileRef = A013 /* click.wav */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CONTAINER_PROXY_WIDGET = {
+			isa = PBXContainerItemProxy;
+			containerPortal = PROJECT /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = TARGET_WIDGET;
+			remoteInfo = TapCounterWidget;
+		};
+		CONTAINER_PROXY_WATCH = {
+			isa = PBXContainerItemProxy;
+			containerPortal = PROJECT /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = TARGET_WATCH;
+			remoteInfo = TapCounterWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EMBED_EXTENSIONS_PHASE /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B018 /* TapCounterWidget.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EMBED_WATCH_CONTENT_PHASE /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				B025 /* TapCounterWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		TARGET_DEPENDENCY_WIDGET = {
+			isa = PBXTargetDependency;
+			target = TARGET_WIDGET /* TapCounterWidget */;
+			targetProxy = CONTAINER_PROXY_WIDGET;
+		};
+		TARGET_DEPENDENCY_WATCH = {
+			isa = PBXTargetDependency;
+			target = TARGET_WATCH /* TapCounterWatch */;
+			targetProxy = CONTAINER_PROXY_WATCH;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXFileReference section */
+		A019 /* PhoneWatchSyncManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneWatchSyncManager.swift; sourceTree = "<group>"; };
+		A020 /* TapCounterWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapCounterWatchApp.swift; sourceTree = "<group>"; };
+		A021 /* WatchHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchHomeView.swift; sourceTree = "<group>"; };
+		A022 /* WatchCounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchCounterView.swift; sourceTree = "<group>"; };
+		A023 /* WatchSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchSessionManager.swift; sourceTree = "<group>"; };
+		A024 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A025 /* TapCounterWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TapCounterWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A026 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A014 /* TapCounterActivityAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapCounterActivityAttributes.swift; sourceTree = "<group>"; };
+		A015 /* LiveActivityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveActivityManager.swift; sourceTree = "<group>"; };
+		A016 /* TapCounterWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapCounterWidget.swift; sourceTree = "<group>"; };
+		A017 /* TapCounterWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TapCounterWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A018 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A000 /* TapCounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TapCounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A001 /* TapCounterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapCounterApp.swift; sourceTree = "<group>"; };
+		A002 /* TapSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapSession.swift; sourceTree = "<group>"; };
+		A003 /* HapticService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticService.swift; sourceTree = "<group>"; };
+		A004 /* TapStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapStore.swift; sourceTree = "<group>"; };
+		A005 /* TapSessionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapSessionViewModel.swift; sourceTree = "<group>"; };
+		A006 /* Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Components.swift; sourceTree = "<group>"; };
+		A007 /* TapCounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapCounterView.swift; sourceTree = "<group>"; };
+		A008 /* NewSessionSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSessionSheet.swift; sourceTree = "<group>"; };
+		A009 /* RowViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowViews.swift; sourceTree = "<group>"; };
+		A010 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		A011 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A012 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A013 /* click.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = click.wav; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FRAMEWORKS_PHASE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		WIDGET_FRAMEWORKS_PHASE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		WATCH_FRAMEWORKS_PHASE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		MAINGROUP /* TapCounter */ = {
+			isa = PBXGroup;
+			children = (
+				A001 /* TapCounterApp.swift */,
+				A011 /* Assets.xcassets */,
+				A012 /* Info.plist */,
+				A013 /* click.wav */,
+				MODELS_GROUP /* Models */,
+				SERVICES_GROUP /* Services */,
+				VIEWMODELS_GROUP /* ViewModels */,
+				VIEWS_GROUP /* Views */,
+			);
+			path = TapCounter;
+			sourceTree = "<group>";
+		};
+		MODELS_GROUP /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A002 /* TapSession.swift */,
+				A014 /* TapCounterActivityAttributes.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		PRODUCTS /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A000 /* TapCounter.app */,
+				A017 /* TapCounterWidget.appex */,
+				A025 /* TapCounterWatch.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ROOT = {
+			isa = PBXGroup;
+			children = (
+				MAINGROUP /* TapCounter */,
+				WIDGETGROUP /* TapCounterWidget */,
+				WATCH_MAIN_GROUP /* TapCounterWatch */,
+				PRODUCTS /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		SERVICES_GROUP /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A003 /* HapticService.swift */,
+				A004 /* TapStore.swift */,
+				A015 /* LiveActivityManager.swift */,
+				A019 /* PhoneWatchSyncManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		VIEWMODELS_GROUP /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				A005 /* TapSessionViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		VIEWS_GROUP /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A006 /* Components.swift */,
+				A007 /* TapCounterView.swift */,
+				A008 /* NewSessionSheet.swift */,
+				A009 /* RowViews.swift */,
+				A010 /* HomeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		WIDGETGROUP /* TapCounterWidget */ = {
+			isa = PBXGroup;
+			children = (
+				A016 /* TapCounterWidget.swift */,
+				A018 /* Info.plist */,
+			);
+			path = TapCounterWidget;
+			sourceTree = "<group>";
+		};
+		WATCH_MAIN_GROUP /* TapCounterWatch */ = {
+			isa = PBXGroup;
+			children = (
+				A020 /* TapCounterWatchApp.swift */,
+				A024 /* Assets.xcassets */,
+				A026 /* Info.plist */,
+				WATCH_SERVICES_GROUP /* Services */,
+				WATCH_VIEWS_GROUP /* Views */,
+			);
+			path = TapCounterWatch;
+			sourceTree = "<group>";
+		};
+		WATCH_SERVICES_GROUP /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A023 /* WatchSessionManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		WATCH_VIEWS_GROUP /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A021 /* WatchHomeView.swift */,
+				A022 /* WatchCounterView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		TARGET /* TapCounter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BUILDCONFIGLIST_TARGET /* Build configuration list for PBXNativeTarget "TapCounter" */;
+			buildPhases = (
+				SOURCES_PHASE /* Sources */,
+				RESOURCES_PHASE /* Resources */,
+				FRAMEWORKS_PHASE /* Frameworks */,
+				EMBED_EXTENSIONS_PHASE /* Embed Foundation Extensions */,
+				EMBED_WATCH_CONTENT_PHASE /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				TARGET_DEPENDENCY_WIDGET /* PBXTargetDependency */,
+				TARGET_DEPENDENCY_WATCH /* PBXTargetDependency */,
+			);
+			name = TapCounter;
+			productName = TapCounter;
+			productReference = A000 /* TapCounter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		TARGET_WIDGET /* TapCounterWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BUILDCONFIGLIST_WIDGET /* Build configuration list for PBXNativeTarget "TapCounterWidget" */;
+			buildPhases = (
+				WIDGET_SOURCES_PHASE /* Sources */,
+				WIDGET_FRAMEWORKS_PHASE /* Frameworks */,
+				WIDGET_RESOURCES_PHASE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TapCounterWidget;
+			productName = TapCounterWidget;
+			productReference = A017 /* TapCounterWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		TARGET_WATCH /* TapCounterWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BUILDCONFIGLIST_WATCH /* Build configuration list for PBXNativeTarget "TapCounterWatch" */;
+			buildPhases = (
+				WATCH_SOURCES_PHASE /* Sources */,
+				WATCH_FRAMEWORKS_PHASE /* Frameworks */,
+				WATCH_RESOURCES_PHASE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TapCounterWatch;
+			productName = TapCounterWatch;
+			productReference = A025 /* TapCounterWatch.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		PROJECT /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					TARGET = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					TARGET_WIDGET = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					TARGET_WATCH = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = BUILDCONFIGLIST_PROJECT /* Build configuration list for PBXProject "TapCounter" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ROOT;
+			productRefGroup = PRODUCTS /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				TARGET /* TapCounter */,
+				TARGET_WIDGET /* TapCounterWidget */,
+				TARGET_WATCH /* TapCounterWatch */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		RESOURCES_PHASE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B011 /* Assets.xcassets in Resources */,
+				B012 /* click.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		WIDGET_RESOURCES_PHASE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		WATCH_RESOURCES_PHASE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B024 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		SOURCES_PHASE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B001 /* TapCounterApp.swift in Sources */,
+				B002 /* TapSession.swift in Sources */,
+				B003 /* HapticService.swift in Sources */,
+				B004 /* TapStore.swift in Sources */,
+				B005 /* TapSessionViewModel.swift in Sources */,
+				B006 /* Components.swift in Sources */,
+				B007 /* TapCounterView.swift in Sources */,
+				B008 /* NewSessionSheet.swift in Sources */,
+				B009 /* RowViews.swift in Sources */,
+				B010 /* HomeView.swift in Sources */,
+				B014 /* TapCounterActivityAttributes.swift in Sources */,
+				B015 /* LiveActivityManager.swift in Sources */,
+				B019 /* PhoneWatchSyncManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		WIDGET_SOURCES_PHASE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B016 /* TapCounterWidget.swift in Sources */,
+				B017 /* TapCounterActivityAttributes.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		WATCH_SOURCES_PHASE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B020 /* TapCounterWatchApp.swift in Sources */,
+				B021 /* WatchHomeView.swift in Sources */,
+				B022 /* WatchCounterView.swift in Sources */,
+				B023 /* WatchSessionManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		DEBUG_PROJECT /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DEBUG_TARGET /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 9;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = WPPX58XAC9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = TapCounter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.8;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tapcount.TapCounter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		RELEASE_PROJECT /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		RELEASE_TARGET /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 9;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = WPPX58XAC9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = TapCounter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.8;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tapcount.TapCounter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		DEBUG_WIDGET /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 9;
+				DEVELOPMENT_TEAM = WPPX58XAC9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = TapCounterWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.8;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tapcount.TapCounter.TapCounterWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		RELEASE_WIDGET /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 9;
+				DEVELOPMENT_TEAM = WPPX58XAC9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = TapCounterWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.8;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tapcount.TapCounter.TapCounterWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		DEBUG_WATCH /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 9;
+				DEVELOPMENT_TEAM = WPPX58XAC9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = TapCounterWatch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.8;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tapcount.TapCounter.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SUPPORTED_PLATFORMS = "watchos watchsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		RELEASE_WATCH /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 9;
+				DEVELOPMENT_TEAM = WPPX58XAC9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = TapCounterWatch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.8;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tapcount.TapCounter.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SUPPORTED_PLATFORMS = "watchos watchsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BUILDCONFIGLIST_PROJECT /* Build configuration list for PBXProject "TapCounter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEBUG_PROJECT /* Debug */,
+				RELEASE_PROJECT /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BUILDCONFIGLIST_TARGET /* Build configuration list for PBXNativeTarget "TapCounter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEBUG_TARGET /* Debug */,
+				RELEASE_TARGET /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BUILDCONFIGLIST_WIDGET /* Build configuration list for PBXNativeTarget "TapCounterWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEBUG_WIDGET /* Debug */,
+				RELEASE_WIDGET /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BUILDCONFIGLIST_WATCH /* Build configuration list for PBXNativeTarget "TapCounterWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEBUG_WATCH /* Debug */,
+				RELEASE_WATCH /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = PROJECT /* Project object */;
+}
+
