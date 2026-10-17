@@ -68,3 +68,28 @@ TapCounter/
 - **watchOS:** 10.0+
 - **Xcode:** 15.4+ / 16.0+
 - **Swift:** 5.0+
+
+---
+
+## 4. Progressive Web App (PWA)
+
+In addition to native iOS & watchOS apps, Tap Counter is available as an installable standalone Progressive Web App (PWA) under `webapp/`.
+
+### Features:
+- **Zero-Install / Offline Ready:** Built with Service Worker caching for 100% offline usage.
+- **Add to Home Screen (`apple-mobile-web-app-capable`):** Runs full-screen on iPhone without Safari URL bar or browser chrome.
+- **LocalStorage Persistence:** Automatically persists in-progress sessions, templates, and completed history across reboots and app launches.
+- **Native Apple Feel:**
+  - SF Pro typography & iOS grouped background styling.
+  - Safe-area insets (`env(safe-area-inset-top)` / `env(safe-area-inset-bottom)`).
+  - Synthesized mechanical click sound via Web Audio API.
+  - Haptic feedback via `navigator.vibrate`.
+- **Three Counting Modes:** Simple, Target (with SVG progress circle & celebration confetti), and Countdown Timer (with auto-finish).
+
+### How to Install on iPhone:
+1. Host the `webapp/` folder on GitHub Pages, Netlify, Vercel, or a local server.
+2. Open the URL in Safari on your iPhone.
+3. Tap the **Share** button (the square with an arrow pointing upward).
+4. Scroll down and tap **Add to Home Screen**.
+5. Tap **Add** in the top right. Launch Tap Counter directly from your Home Screen!
+
